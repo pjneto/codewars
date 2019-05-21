@@ -36,6 +36,10 @@ class DivisibilityByThirteen
             return $this->thirth($iSum);
     }
 
+    /**
+     * @param int $iValue
+     * @return string
+     */
     private function invertNumber(int $iValue): string
     {
         $sValue = (string)$iValue;
@@ -75,7 +79,7 @@ class DivisibilityByThirteen
         return $this->aRepetitionPattern[$this->iPointer];
     }
 
-    private function incrementCounter()
+    private function incrementCounter(): void
     {
         $this->iPointer++;
     }
