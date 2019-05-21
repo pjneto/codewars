@@ -12,7 +12,7 @@ class DivisibilityByThirteenTest extends TestCase
         $oCalculator = new DivisibilityByThirteen();
         $this->assertEquals(
             87,
-            $oCalculator->calculateRemainder(1234567)
+            $oCalculator->thirth(1234567)
         );
     }
 
@@ -21,7 +21,7 @@ class DivisibilityByThirteenTest extends TestCase
         $oCalculator = new DivisibilityByThirteen();
         $this->assertEquals(
             48,
-            $oCalculator->calculateRemainder(321)
+            $oCalculator->thirth(321)
         );
     }
 
@@ -30,7 +30,7 @@ class DivisibilityByThirteenTest extends TestCase
         $oCalculator = new DivisibilityByThirteen();
         $this->assertEquals(
             79,
-            $oCalculator->calculateRemainder(8529)
+            $oCalculator->thirth(8529)
         );
     }
 

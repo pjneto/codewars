@@ -16,11 +16,13 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^8",
-    "phpmd/phpmd": "^2.6"
+    "phpmd/phpmd": "^2.6",
+    "phpdocumentor/phpdocumentor": "2.*"
   },
   "scripts": {
     "test": "phpunit tests",
-    "phpmd": "phpmd app html cleancode,codesize,controversial,design,naming,unusedcode --ignore-violations-on-exit > ./build/phpmd/index.html && echo See the report in ./build/phpmd/index.html",
-    "coverage-report": "phpunit --coverage-html ./build/phpunit tests && echo See the report in ./build/phpunit/index.html"
+    "mess-detector": "phpmd app html cleancode,codesize,controversial,design,naming,unusedcode --ignore-violations-on-exit > ./build/phpmd/index.html && echo See the report in ./build/phpmd/index.html",
+    "coverage-report": "phpunit --coverage-html ./build/phpunit tests && echo See the report in ./build/phpunit/index.html",
+    "doc":  "phpdoc -d ./app -t ./build/docs && echo See generated documentaion in ./build/phpdoc/index.html"
   }
 }

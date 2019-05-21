@@ -10,16 +10,11 @@ class DivisibilityByThirteen
     private $aRepetitionPattern = [1, 10, 9, 12, 3, 4];
     private $iPointer = 0;
 
-    public function calculateRemainder(int $iValue): int
-    {
-        return $this->thirth($iValue);
-    }
-
     /**
      * @param int $iValue
      * @return int
      */
-    private function thirth(int $iValue): int
+    public function thirth(int $iValue): int
     {
         $this->initiateCounter();
         $sInvertedNumber = $this->invertNumber($iValue);
