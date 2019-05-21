@@ -1,0 +1,23 @@
+{
+  "name": "codewars/pjneto",
+  "description": "Projeto que contém exercícios resolvidos",
+  "minimum-stability": "dev",
+  "license": "public",
+  "authors": [
+    {
+      "name": "Pedro Nascimento",
+      "email": "pjneto@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ],
+    "psr-4": {
+      "Exercises\\": "src/Exercises/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  }
+}
