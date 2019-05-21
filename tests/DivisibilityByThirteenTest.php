@@ -1,7 +1,7 @@
 <?php
 
 
-use Sixth\DivisibilityByThirteen;
+use Exercises\Sixth\DivisibilityByThirteen;
 use PHPUnit\Framework\TestCase;
 
 class DivisibilityByThirteenTest extends TestCase

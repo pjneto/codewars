@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Sixth;
+namespace Exercises\Sixth;
 
 
 class DivisibilityByThirteen
