@@ -1,3 +1,5 @@
 vendor/
 composer.lock
 .idea
+build/phpmd/
+build/phpunit/
