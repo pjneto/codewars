@@ -11,8 +11,10 @@ class DivisibilityByThirteen
     private $iPointer = 0;
 
     /**
-     * @param int $iValue
-     * @return int
+     * A Rule of Divisibility by 13
+     *
+     * @param int $iValue Number to divide
+     * @return int Returns a remainder
      */
     public function thirth(int $iValue): int
     {
